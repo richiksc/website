@@ -1,0 +1,31 @@
+<h2>Projects</h2>
+{% if site.projects.size > 0 %}
+
+  <div class="project-container flex horizontal wrap">
+    {% for project in site.projects %}
+      <div class="project">
+        <header class="project-header flex horizontal">
+          <strong class="project-name">{{ project.name }}</strong>
+          {% if project.deprecated == true %}
+            <span class="deprecated">DEPRECATED</span>
+          {% endif %}
+          <span class="grow"></span>
+          <a href="{{ project.github_url }}"><i class="fa fa-github"></i></a>
+        </header>
+        <div class="project-content">
+          {{ project.content }}
+        </div>
+        <div class="project-tags">
+          {% for tag in project.tags %}
+            <span class="tag">{{ tag }}</span>
+          {% endfor %}
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  
+{% else %}
+
+  <div style="text-align:center;"><i class="fa fa-sad"></i> Sorry, there seems to be nothing here.</div>
+  
+{% endif %}

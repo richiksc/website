@@ -1,3 +1,6 @@
+$sans: 'Source Sans Pro', Roboto, Helvetica, Arial, sans-serif;
+$mono: 'Roboto Mono', Consolas, Monaco, monospace, serif;
+
 /**
  * Reset some basic elements
  */
@@ -86,7 +89,7 @@ code {
     font-size: 15px;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
-    background-color: #eef;
+    background-color: #eee;
 }
 
 code {
@@ -102,4 +105,55 @@ pre {
         padding-right: 0;
         padding-left: 0;
     }
+}
+
+
+.project-container {
+  justify-content: space-around;
+}
+
+.project-container > .project {
+  width:50%;
+  max-width: 480px;
+  padding: 16px;
+  display: inline-block;
+  border: 2px solid black;
+  min-width:320px;
+  
+  .project-header {
+    margin-bottom:16px;
+    strong {
+      font-family: $mono;
+      font-weight: 500;
+    }
+    
+    .deprecated {
+      margin-left: 8px;
+      font-size: .75em;
+      padding:.2em;
+      line-height: 1rem;
+
+      border: 1px solid #f00000;
+      color: #f00000;
+    }
+    
+    a, a:hover {
+      color: black;
+    }
+    
+    a:visited {
+      color:#333;
+    }
+  }
+  
+  .project-content {
+    margin-bottom: 16px;
+  }
+  
+  .tag {
+    background-color: black;
+    font-family: $mono;
+    color: white;
+    padding:0 8px;
+  }
 }

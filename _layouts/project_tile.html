@@ -1,0 +1,18 @@
+---
+layout: default
+---
+<article class="project-article" itemscope>
+
+  <header class="post-header">
+    <strong class="project-name">{{ page.name }}</h1>
+  </header>
+  <div>
+    {{ content }}
+  </div>
+  <div class="project-tags">
+    {% for tag in page.tags %}
+      <span class="tag">{{ tag }}</span>
+    {% endfor %}
+  </div>
+  <a href="{{ project.github_url }}"><i class="fa fa-github"></i></a>
+</article>

@@ -1,0 +1,21 @@
+{
+  "name": "richiksc.github.io",
+  "homepage": "https://richiksc.github.io/",
+  "authors": [
+    "Richik SC <sc.richik@gmail.com>"
+  ],
+  "description": "My personal portfolio website",
+  "main": "index.html",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "flex-css": "*"
+  }
+}

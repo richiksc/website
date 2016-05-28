@@ -1,0 +1,14 @@
+{
+  "name": "flex-css",
+  "homepage": "https://github.com/richiksc/flex-css",
+  "_release": "c2b79c4770",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "c2b79c47701debd09a866542f9d36dad6b79ab74"
+  },
+  "_source": "https://github.com/richiksc/flex-css.git",
+  "_target": "*",
+  "_originalSource": "flex-css",
+  "_direct": true
+}

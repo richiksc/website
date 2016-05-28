@@ -10,7 +10,7 @@ title: richik.sc
 email: sc.richik@gmail.com
 copyright: Copyright © 2016 Richik SC
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://richiksc.github.io" # the base hostname & protocol for your site
 twitter_username: richiksc
 github_username:  richiksc
 email: sc.richik@gmail.com
@@ -18,3 +18,8 @@ email: sc.richik@gmail.com
 
 # Build settings
 markdown: kramdown
+
+# Collections
+collections:
+  projects:
+    layout: project_tile

@@ -6,12 +6,35 @@
   <body>
 
     {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
+    
+    <main>
+      <section id="intro">
+        <div>
+          <h2>hello.</h2>
+          <p>I'm a student and a hobby developer. I work on various projects, 
+          mostly with web technologies, but I also do Java and Node. I started
+          coding and programming when I was in 3<sup>rd</sup> grade and have been 
+          loving it ever since. I've made  lots of projects just for fun, and 
+          still working on it. I chose programming as a way to challenge my mind, 
+          and to develop my rational thinking skills. I think it's cool to know that 
+          computers just do the instructions you give it. In 2014, I also started 
+          a flop YouTube channel, Coders201, with the hopes of sharing programming
+          with others.</p>
+        </div>
+      </section>
+      <section>
+        {% include links.html %}
+      </section>
+      <section id="work">
+        {% include projects.html %}
+      </section>
+      <section id="blog">
+        <!--{% for post in site.posts.output %}
+          {{ post }}
+        {% endfor %}-->
         {{ content }}
-      </div>
-    </div>
+      </section>
+    </main>
 
     {% include footer.html %}
 
