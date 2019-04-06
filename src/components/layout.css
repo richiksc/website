@@ -18,15 +18,6 @@ html {
   scroll-snap-type: y mandatory;
 }
 
-a.cta {
-  font-weight: 600;
-  text-decoration: none;
-}
-
-a.cta [class^="fa"] {
-  margin-left: 0.25em;
-}
-
 body {
   margin: 0;
   color: rgba(64, 64, 64);
@@ -82,7 +73,7 @@ header h1 {
 }
 
 a {
-  color: #2196F3;
+  color: #1976D2;
 }
 
 .fab, .fas {
@@ -130,4 +121,34 @@ footer img + p {
 
 h1 {
   font-weight: 600;
+}
+
+a.cta {
+  font-weight: 600;
+  text-decoration: none;
+}
+
+a.cta i[class^="fa"] {
+  margin-left: 0.25em;
+}
+
+a.cta:hover i[class^="fa"] {
+  animation: fadeScroll 1s infinite;
+}
+
+@keyframes fadeScroll {
+  0%, 100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  49% {
+    transform: translateY(8px);
+    opacity: 0;
+  }
+
+  50% {
+    transform: translateY(-8px);
+    opacity: 0;
+  }
 }

@@ -62,16 +62,16 @@ class Header extends React.Component {
           </h1>
           <div style={{ flexGrow: 1 }}></div>
           <div className="social-links">
-            <a className="navbar-link" href="https://github.com/richiksc">
+            <a className="navbar-link" aria-label="GitHub" href="https://github.com/richiksc">
               <i className="fab fa-github" />
             </a>
-            <a className="navbar-link" href="https://codepen.io/richiksc">
+            <a className="navbar-link" aria-label="CodePen" href="https://codepen.io/richiksc">
               <i className="fab fa-codepen" />
             </a>
-            <a className="navbar-link" href="https://twitter.com/richiksc">
+            <a className="navbar-link" aria-label="Twitter" href="https://twitter.com/richiksc">
               <i className="fab fa-twitter" />
             </a>
-            <a className="navbar-link" href="https://linkedin.com/in/richiksc">
+            <a className="navbar-link" aria-label="LinkedIn" href="https://linkedin.com/in/richiksc">
               <i className="fab fa-linkedin" />
             </a>
           </div>

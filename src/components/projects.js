@@ -9,7 +9,7 @@ const ProjectCard = ({ name, children, labels, url, repo }) => (
     <div className="project-card__header">
       <h2>{ name }</h2>
       {repo &&
-        <a className="navbar-link" href={ `https://github.com/${repo}` } title={repo}>
+        <a className="navbar-link" aria-label="View on GitHub" href={ `https://github.com/${repo}` } title={repo}>
           <i className="fab fa-github"></i>
         </a>
       }
