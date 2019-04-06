@@ -10,9 +10,12 @@ import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
 
 import Header from "./header"
+import iconGray from "../images/icon-grayscale.png"
 import "./layout.css"
 
-const Layout = ({ children }) => (
+console.log(iconGray);
+
+const Layout = ({ headerVisible, children }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -25,7 +28,7 @@ const Layout = ({ children }) => (
     `}
     render={data => (
       <>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Header siteTitle={data.site.siteMetadata.title} headerVisible={headerVisible}/>
         <div
           style={{
             margin: `0 auto`,
@@ -36,9 +39,9 @@ const Layout = ({ children }) => (
         >
           <main>{children}</main>
           <footer>
-            © {new Date().getFullYear()}, Built with
-            {` `}
-            <a href="https://www.gatsbyjs.org">Gatsby</a>
+            <img src={iconGray} alt="Richik SC Logo" width="60"/>
+            <p>&copy; 2019 Richik SC</p>
+            <p>Built with ♥ and <a href="https://www.gatsbyjs.org">Gatsby</a></p>
           </footer>
         </div>
       </>
@@ -48,6 +51,7 @@ const Layout = ({ children }) => (
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  headerVisible: PropTypes.bool,
 }
 
 export default Layout

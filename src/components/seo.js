@@ -33,7 +33,8 @@ function SEO({ description, lang, meta, keywords, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      titleTemplate={ `%s | ${site.siteMetadata.title}` }
+      defaultTitle={ site.siteMetadata.title }
       meta={[
         {
           name: `description`,
@@ -77,7 +78,12 @@ function SEO({ description, lang, meta, keywords, title }) {
             : []
         )
         .concat(meta)}
-    />
+
+    >
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
+      <link rel="preload" crossorigin href="https://rsms.me/inter/font-files/Inter-Regular.woff2?v=3.5" as="font"/>
+      <link rel="preload" crossorigin href="https://rsms.me/inter/font-files/Inter-SemiBold.woff2?v=3.5" as="font"/>
+    </Helmet>
   )
 }
 
@@ -93,7 +99,7 @@ SEO.propTypes = {
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   keywords: PropTypes.arrayOf(PropTypes.string),
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
 }
 
 export default SEO
