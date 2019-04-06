@@ -65,7 +65,7 @@ class Header extends React.Component {
             <a className="navbar-link" href="https://github.com/richiksc">
               <i className="fab fa-github" />
             </a>
-            <a className="navbar-link" href="https:/codepen.io/richiksc">
+            <a className="navbar-link" href="https://codepen.io/richiksc">
               <i className="fab fa-codepen" />
             </a>
             <a className="navbar-link" href="https://twitter.com/richiksc">
