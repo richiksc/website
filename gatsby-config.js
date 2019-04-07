@@ -1,11 +1,20 @@
 module.exports = {
   siteMetadata: {
     title: `Richik SC`,
-    description: `Personal site for Richik SC`,
+    description:
+`I'm a student, full-stack developer, and graphic designer.\
+ I work with modern tech, such as Node, Vue, and Git,\
+ and I'm always looking to learn more.`,
     author: `@richiksc`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-react-helmet-canonical-urls`,
+      options: {
+        siteUrl: `https://richiksc.me`
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
