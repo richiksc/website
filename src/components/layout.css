@@ -63,7 +63,7 @@ header h1 {
   pointer-events: none;
 }
 
-.navbar-link {
+.icon-link {
   display: inline-block;
   padding: 1em;
   border-radius: 0.25em;
@@ -72,29 +72,33 @@ header h1 {
   height: 1em;
 }
 
+.icon-link.small {
+  padding: 0.5em;
+}
+
 a {
   color: #1976D2;
 }
 
-.fab, .fas {
+.fab, .fas, .svg-inline--fa {
   user-select: none;
 }
 
-.navbar-link .fab, .navbar-link .fas {
+.icon-link .svg-inline--fa {
   position: relative;
   top: -0.125em;
   line-height: 1em;
 }
 
-.navbar-link:last-child {
+.social-links .icon-link:last-child {
   margin-right: -16px;
 }
 
-.navbar-link:hover {
+.icon-link:hover {
   background-color: rgba(0,0,0,0.15);
 }
 
-.navbar-link, .navbar-link:hover, .navbar-link:visited {
+.icon-link, .icon-link:hover, .icon-link:visited {
   color: inherit;
 }
 
@@ -128,11 +132,11 @@ a.cta {
   text-decoration: none;
 }
 
-a.cta i[class^="fa"] {
+a.cta svg.svg-inline--fa {
   margin-left: 0.25em;
 }
 
-a.cta:hover i[class^="fa"] {
+a.cta:hover svg.svg-inline--fa {
   animation: fadeScroll 1s infinite;
 }
 

@@ -1,5 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
+import IconLink from "./IconLink"
 
 import "./project-card.css"
 import projects from "../data/projects"
@@ -9,9 +10,11 @@ const ProjectCard = ({ name, children, labels, url, repo }) => (
     <div className="project-card__header">
       <h2>{ name }</h2>
       {repo &&
-        <a className="navbar-link" aria-label="View on GitHub" href={ `https://github.com/${repo}` } title={repo}>
-          <i className="fab fa-github"></i>
-        </a>
+        <IconLink small
+          title={repo}
+          label="View on GitHub"
+          href={ `https://github.com/${repo}` }
+          icon={['fab', 'github']} />
       }
     </div>
     <a className="project-card__link" href={url}>{ url }</a>

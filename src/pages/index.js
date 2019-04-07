@@ -3,6 +3,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import Projects from "../components/projects"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 class IndexPage extends React.Component {
 
@@ -44,7 +45,7 @@ class IndexPage extends React.Component {
             team, where we have six weeks to design, build, and program robots that compete in annual challenges.
           </p>
           <a href="#projects" className="cta">
-            View my projects <i className="fas fa-angle-down" />
+            View my projects <FontAwesomeIcon icon="angle-down"/>
           </a>
         </section>
         <Projects/>

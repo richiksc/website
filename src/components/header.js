@@ -2,6 +2,7 @@ import { Link } from "gatsby"
 import PropTypes from "prop-types"
 import React from "react"
 
+import IconLink from "../components/IconLink"
 import icon from "../images/icon-96.png"
 
 class Header extends React.Component {
@@ -62,18 +63,10 @@ class Header extends React.Component {
           </h1>
           <div style={{ flexGrow: 1 }}></div>
           <div className="social-links">
-            <a className="navbar-link" aria-label="GitHub" href="https://github.com/richiksc">
-              <i className="fab fa-github" />
-            </a>
-            <a className="navbar-link" aria-label="CodePen" href="https://codepen.io/richiksc">
-              <i className="fab fa-codepen" />
-            </a>
-            <a className="navbar-link" aria-label="Twitter" href="https://twitter.com/richiksc">
-              <i className="fab fa-twitter" />
-            </a>
-            <a className="navbar-link" aria-label="LinkedIn" href="https://linkedin.com/in/richiksc">
-              <i className="fab fa-linkedin" />
-            </a>
+            <IconLink label="GitHub" href="https://github.com/richiksc" icon={['fab', 'github']}/>
+            <IconLink label="CodePen" href="https://codepen.io/richiksc" icon={['fab', 'codepen']}/>
+            <IconLink label="Twitter" href="https://twitter.com/richiksc" icon={['fab', 'twitter']}/>
+            <IconLink label="LinkedIn" href="https://linkedin.com/in/richiksc" icon={['fab', 'linkedin']}/>
           </div>
         </div>
       </header>

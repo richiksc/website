@@ -55,9 +55,8 @@
   margin: 0;
 }
 
-.project-card__header .navbar-link {
-  padding: 0.5em;
-  margin: 0 0.5em;
+.project-card__header .icon-link {
+  margin-left: 0.5em;
 }
 
 @media only screen and (max-width: 720px) {

@@ -8,12 +8,27 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
+import { library } from "@fortawesome/fontawesome-svg-core"
 
 import Header from "./header"
 import iconGray from "../images/icon-grayscale.png"
 import "./layout.css"
 
-console.log(iconGray);
+import { faAngleDown } from "@fortawesome/free-solid-svg-icons"
+import {
+  faGithub,
+  faCodepen,
+  faTwitter,
+  faLinkedin
+} from "@fortawesome/free-brands-svg-icons"
+
+library.add(
+  faAngleDown,
+  faGithub,
+  faCodepen,
+  faTwitter,
+  faLinkedin
+);
 
 const Layout = ({ headerVisible, children }) => (
   <StaticQuery
