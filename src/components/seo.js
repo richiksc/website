@@ -77,10 +77,9 @@ function SEO({ description, lang, meta, keywords, title }) {
               }
             : []
         )
-        .concat(meta)}
-
+        .concat(meta)
+      }
     >
-      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous" />
       <link rel="preload" crossorigin="anonymous" href="https://rsms.me/inter/font-files/Inter-Regular.woff2?v=3.5" as="font"/>
       <link rel="preload" crossorigin="anonymous" href="https://rsms.me/inter/font-files/Inter-SemiBold.woff2?v=3.5" as="font"/>
     </Helmet>
