@@ -3,7 +3,7 @@ import PropTypes from "prop-types"
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
-const IconLink = ({ label, icon, href, small, className, title }) => (
+const IconLink = ({ label, icon, href, small, className, title, ...props }) => (
   <a
     className={
       'icon-link'
@@ -12,7 +12,8 @@ const IconLink = ({ label, icon, href, small, className, title }) => (
     }
     title={title || label}
     aria-label={label}
-    href={href}>
+    href={href}
+    {...props}>
     <FontAwesomeIcon icon={icon} />
   </a>
 )

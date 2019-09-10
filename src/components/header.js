@@ -29,7 +29,7 @@ class Header extends React.Component {
       <header
       style={{
         marginBottom: `1.45rem`,
-        backgroundColor: 'white',
+        backgroundColor: 'var(--background-color, white)',
         position: 'sticky',
         top: 0,
         zIndex: 1,
