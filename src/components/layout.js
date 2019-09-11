@@ -13,6 +13,7 @@ import { library } from "@fortawesome/fontawesome-svg-core"
 import Header from "./header"
 import iconGray from "../images/icon-grayscale.png"
 import "./layout.css"
+import DarkModeButton from "./DarkModeButton"
 
 import { faAngleDown, faAdjust } from "@fortawesome/free-solid-svg-icons"
 import {
@@ -21,7 +22,6 @@ import {
   faTwitter,
   faLinkedin
 } from "@fortawesome/free-brands-svg-icons"
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 
 library.add(
   faAngleDown,
@@ -54,19 +54,7 @@ const Layout = ({ headerVisible, children }) => (
             paddingTop: 0,
           }}
         >
-          <button
-            className='action-button'
-            style={{
-              position: 'fixed',
-              bottom: '32px',
-              right: '32px',
-            }}
-            onClick={() => document.documentElement.classList.toggle('dark')}
-            title='Toggle dark/light mode'
-            >
-              <FontAwesomeIcon icon='adjust'/>
-              Dark mode
-          </button>
+          <DarkModeButton />
           <main>{children}</main>
           <footer>
             <img src={iconGray} alt="Richik SC Logo" width="60"/>
