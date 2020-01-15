@@ -52,6 +52,8 @@ export default class DarkModeButton extends React.Component {
           position: 'fixed',
           bottom: '32px',
           right: '32px',
+          zIndex: 1,
+          border: '2px solid var(--background-color)'
         }}
         onClick={this.handleButtonClick}
         title='Toggle dark/light mode'
@@ -63,7 +65,6 @@ export default class DarkModeButton extends React.Component {
               transition: 'transform 150ms ease-in',
             }}
             />
-          { this.state.isDark }
           { `${this.state.isDark ? 'Light' : 'Dark' } mode` }
       </button>
     );
