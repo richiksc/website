@@ -58,7 +58,7 @@ const Layout = ({ headerVisible, children }) => (
           <main>{children}</main>
           <footer>
             <img src={iconGray} alt="Richik SC Logo" width="60"/>
-            <p>&copy; 2019 Richik SC</p>
+            <p>&copy; 2020 Richik SC</p>
             <p>Built with ♥ and <a href="https://www.gatsbyjs.org">Gatsby</a></p>
           </footer>
         </div>
