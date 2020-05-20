@@ -8,7 +8,9 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
-import { library } from "@fortawesome/fontawesome-svg-core"
+import { config, library } from "@fortawesome/fontawesome-svg-core"
+import "@fortawesome/fontawesome-svg-core/styles.css"
+config.autoAddCss = false
 
 import Header from "./header"
 import iconGray from "../images/icon-grayscale.png"
