@@ -9,19 +9,19 @@
     "@fortawesome/free-brands-svg-icons": "^5.12.0",
     "@fortawesome/free-solid-svg-icons": "^5.12.0",
     "@fortawesome/react-fontawesome": "^0.1.8",
-    "gatsby": "^2.21.4",
-    "gatsby-plugin-manifest": "^2.2.37",
-    "gatsby-plugin-offline": "^3.0.32",
-    "gatsby-plugin-react-helmet": "^3.1.21",
+    "gatsby": "^2.29.1",
+    "gatsby-plugin-manifest": "^2.9.0",
+    "gatsby-plugin-offline": "^3.7.0",
+    "gatsby-plugin-react-helmet": "^3.7.0",
     "gatsby-plugin-react-helmet-canonical-urls": "^1.4.0",
     "gatsby-source-filesystem": "^2.1.46",
     "prop-types": "^15.7.2",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^6.1.0"
   },
   "devDependencies": {
-    "@types/react-helmet": "^5.0.15",
+    "@types/react-helmet": "^5.0.16",
     "gh-pages": "^2.2.0",
     "prettier": "^1.19.1"
   },
