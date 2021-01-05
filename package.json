@@ -1,5 +1,5 @@
 {
-  "name": "richiksc.github.io",
+  "name": "richiksc/website",
   "private": true,
   "description": "Richik SC's personal site",
   "version": "0.1.0",
@@ -40,9 +40,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/richiksc/richiksc.github.io"
+    "url": "https://github.com/richiksc/website"
   },
   "bugs": {
-    "url": "https://github.com/richiksc/richiksc.github.io/issues"
+    "url": "https://github.com/richiksc/website/issues"
   }
 }
