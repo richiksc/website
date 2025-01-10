@@ -37,10 +37,13 @@ class IndexPage extends React.Component {
         <SEO keywords={[`richik`, `richik sc`]} />
         <section>
           <h1 className="h1-mega">Hi, I'm Richik.</h1>
-          <p>I'm a student at the University of Wisconsin-Madison ('24) studying Computer Science.</p>
-          <p>This summer, I'm a Technology Development Program Intern at <a href="https://www.optum.com/">Optum</a>.</p>
+          <p>I'm a software engineer and graduate student at Northeastern University. I graduated with my bachelor's degree in Computer Science from the University of Wisconsin-Madison in 2024.</p>
+          <p>Formerly, I was a Technology Development Program Intern at <a href="https://www.optum.com/">Optum</a>, working on SRE and cloud engineering.</p>
+          <p>
+            Prior to that, I interned at PTC on the <a href="https://www.ptc.com/en/products/vuforia">Vuforia</a> AR team.
+          </p>
           <p style={{ maxWidth: '600px',  marginBottom: `1.45rem` }}>
-            Previously, I interned at PTC on the <a href="https://www.ptc.com/en/products/vuforia">Vuforia</a> AR team.
+            I was also a teaching assistant for the undergrad Operating Systems course at both UW-Madison and Northeastern.
           </p>
           <a href="#projects" className="cta">
             View my projects <FontAwesomeIcon icon="angle-down"/>
