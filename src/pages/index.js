@@ -41,7 +41,7 @@ class IndexPage extends React.Component {
           <div className="intro-text">
             <h1 className="h1-mega">Hi, I'm Richik.</h1>
             <p>I'm a software engineer and graduate student at Northeastern University. I graduated with my bachelor's degree in Computer Science from the University of Wisconsin-Madison in 2024.</p>
-            <p>Formerly, I was a Technology Development Program Intern at <a href="https://www.optum.com/">Optum</a>, working on SRE and cloud engineering.</p>
+            <p>Formerly, I was a Technology Development Program Intern at <a href="https://www.optum.com/">Optum</a>, working with a site reliability engineering team.</p>
             <p>
               Prior to that, I interned at PTC on the <a href="https://www.ptc.com/en/products/vuforia">Vuforia</a> AR team.
             </p>
