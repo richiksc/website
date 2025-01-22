@@ -42,6 +42,7 @@
   border-radius: 0.25em;
   display: inline-block;
   background-color: var(--grey-100, #ECEFF1);
+  font-family: var(--display-type);
 }
 
 .project-card__header {
