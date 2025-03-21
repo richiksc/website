@@ -6,6 +6,8 @@ import Projects from "../components/projects";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 import portrait from "../images/Profile-2025-transparent.png";
+import portraitWebp from "../images/Profile-2025-transparent.webp";
+import portraitAvif from "../images/Profile-2025-transparent.avif";
 
 class IndexPage extends React.Component {
   constructor(props) {
@@ -41,7 +43,12 @@ class IndexPage extends React.Component {
         />
         <section className="intro">
           <div className="image-wrapper">
-            <img src={portrait} alt="Portrait of Richik" />
+            <picture alt="Portrait of Richik smiling in a flannel shirt.">
+              <source srcSet={portraitAvif} type="image/avif" />
+              <source srcSet={portraitWebp} type="image/webp" />
+              <source srcSet={portrait} type="image/png" />
+              <img src={portrait} className="image" />
+            </picture>
           </div>
           <div className="intro-text">
             <h1 className="h1-mega">Hi, I'm Richik.</h1>

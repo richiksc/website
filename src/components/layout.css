@@ -229,6 +229,9 @@ a.cta:hover svg.svg-inline--fa {
 .intro {
   display: grid;
   grid-template: "image text" / fit-content(20%) 1fr;
+  align-content: center;
+  padding-bottom: 6rem;
+  box-sizing: border-box;
   grid-gap: 4rem;
 
   .image-wrapper {
@@ -266,19 +269,19 @@ a.cta:hover svg.svg-inline--fa {
       height: var(--scale);
     }
 
-    img,
+    .image,
     &::before {
       scale: 1;
       transition: scale 0.5s ease;
     }
 
-    &:hover img,
+    &:hover .image,
     &:hover::before {
       scale: 0.9;
     }
   }
 
-  img {
+  .image {
     width: 100%;
     display: block;
     filter: grayscale(100%);
