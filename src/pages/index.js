@@ -43,11 +43,15 @@ class IndexPage extends React.Component {
         />
         <section className="intro">
           <div className="image-wrapper">
-            <picture alt="Portrait of Richik smiling in a flannel shirt.">
+            <picture>
               <source srcSet={portraitAvif} type="image/avif" />
               <source srcSet={portraitWebp} type="image/webp" />
               <source srcSet={portrait} type="image/png" />
-              <img src={portrait} className="image" />
+              <img
+                src={portrait}
+                alt="Portrait of Richik smiling in a flannel shirt."
+                className="image"
+              />
             </picture>
           </div>
           <div className="intro-text">
