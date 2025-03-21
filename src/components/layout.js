@@ -5,34 +5,27 @@
  * See: https://www.gatsbyjs.org/docs/static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import { StaticQuery, graphql } from "gatsby"
-import { config, library } from "@fortawesome/fontawesome-svg-core"
-import "@fortawesome/fontawesome-svg-core/styles.css"
+import React from "react";
+import PropTypes from "prop-types";
+import { StaticQuery, graphql } from "gatsby";
+import { config, library } from "@fortawesome/fontawesome-svg-core";
+import "@fortawesome/fontawesome-svg-core/styles.css";
 
-import Header from "./header"
-import iconGray from "../images/icon-grayscale.png"
-import "./layout.css"
-import DarkModeButton from "./DarkModeButton"
+import Header from "./header";
+import iconGray from "../images/icon-grayscale.png";
+import "./layout.css";
+import DarkModeButton from "./DarkModeButton";
 
-import { faAngleDown, faAdjust } from "@fortawesome/free-solid-svg-icons"
+import { faAngleDown, faAdjust } from "@fortawesome/free-solid-svg-icons";
 import {
   faGithub,
   faCodepen,
   faTwitter,
-  faLinkedin
-} from "@fortawesome/free-brands-svg-icons"
-
-config.autoAddCss = false
-library.add(
-  faAngleDown,
-  faGithub,
-  faCodepen,
-  faTwitter,
   faLinkedin,
-  faAdjust,
-);
+} from "@fortawesome/free-brands-svg-icons";
+
+config.autoAddCss = false;
+library.add(faAngleDown, faGithub, faCodepen, faTwitter, faLinkedin, faAdjust);
 
 const Layout = ({ headerVisible, children }) => (
   <StaticQuery
@@ -45,33 +38,38 @@ const Layout = ({ headerVisible, children }) => (
         }
       }
     `}
-    render={data => (
+    render={(data) => (
       <>
-        <Header siteTitle={data.site.siteMetadata.title} headerVisible={headerVisible}/>
+        <Header
+          siteTitle={data.site.siteMetadata.title}
+          headerVisible={headerVisible}
+        />
         <div
           style={{
             margin: `0 auto`,
             maxWidth: 960,
-            padding: `0px 1.0875rem 1.45rem`,
+            padding: `0px 1.0875rem 1.5rem`,
             paddingTop: 0,
           }}
         >
-          <DarkModeButton />
           <main>{children}</main>
           <footer>
-            <img src={iconGray} alt="Richik SC Logo" width="60"/>
+            <img src={iconGray} alt="Richik SC Logo" width="60" />
             <p>&copy; 2025 Richik SC</p>
-            <p>Built with ♥ and <a href="https://www.gatsbyjs.org">Gatsby</a></p>
+            <p>
+              Built with ♥ and <a href="https://www.gatsbyjs.org">Gatsby</a> in
+              Minneapolis, MN.
+            </p>
           </footer>
         </div>
       </>
     )}
   />
-)
+);
 
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
   headerVisible: PropTypes.bool,
-}
+};
 
-export default Layout
+export default Layout;
