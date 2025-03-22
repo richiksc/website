@@ -8,6 +8,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import portrait from "../images/Profile-2025-transparent.png";
 import portraitWebp from "../images/Profile-2025-transparent.webp";
 import portraitAvif from "../images/Profile-2025-transparent.avif";
+import { GetInTouch } from "../components/GetInTouch";
 
 class IndexPage extends React.Component {
   constructor(props) {
@@ -79,10 +80,22 @@ class IndexPage extends React.Component {
             <a href="#projects" className="cta">
               View my projects <FontAwesomeIcon icon="angle-down" />
             </a>
+            <span class="divider" aria-hidden>
+              |
+            </span>
+            <a
+              href="#contact"
+              className="cta"
+              style={{
+                marginLeft: 0,
+              }}
+            >
+              Contact me <FontAwesomeIcon icon="angle-down" />
+            </a>
           </div>
         </section>
-        <div className="decoration" aria-hidden="true"></div>
         <Projects />
+        <GetInTouch />
       </Layout>
     );
   }

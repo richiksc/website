@@ -1,33 +1,39 @@
-import React from "react"
-import PropTypes from "prop-types"
-import IconLink from "./IconLink"
+import React from "react";
+import PropTypes from "prop-types";
+import IconLink from "./IconLink";
 
-import "./project-card.css"
-import projects from "../data/projects"
+import "./project-card.css";
+import projects from "../data/projects";
 
 const ProjectCard = ({ name, children, labels, url, repo }) => (
   <article className="project-card">
     <div className="project-card__header">
-      <h2>{ name }</h2>
-      {repo &&
-        <IconLink small
+      <h2>{name}</h2>
+      {repo && (
+        <IconLink
+          small
           title={repo}
           label="View on GitHub"
-          href={ `https://github.com/${repo}` }
-          icon={['fab', 'github']} />
-      }
+          href={`https://github.com/${repo}`}
+          icon={["fab", "github"]}
+        />
+      )}
     </div>
-    <a className="project-card__link" href={url}>{ url }</a>
-    <p className="project-card__desc">{ children }</p>
-    {labels && labels.length > 0 &&
+    <a className="project-card__link" href={url}>
+      {url}
+    </a>
+    <p className="project-card__desc">{children}</p>
+    {labels && labels.length > 0 && (
       <div className="project-card__labels">
-        {
-          labels.map(label => {
-            return <span key={label} className="project-card__label">{label}</span>;
-          })
-        }
+        {labels.map((label) => {
+          return (
+            <span key={label} className="project-card__label">
+              {label}
+            </span>
+          );
+        })}
       </div>
-    }
+    )}
   </article>
 );
 
@@ -36,10 +42,14 @@ ProjectCard.propTypes = {
   labels: PropTypes.arrayOf(PropTypes.string),
   url: PropTypes.string,
   repo: PropTypes.string,
-}
+};
 
 const Projects = () => (
   <section id="projects">
+    <div
+      className="decoration decoration--left decoration--red"
+      aria-hidden="true"
+    ></div>
     <h1 className="h1-mega">Projects</h1>
     <ul className="projects-list">
       {projects &&
@@ -49,14 +59,14 @@ const Projects = () => (
               name={project.name}
               url={project.url}
               repo={project.repo}
-              labels={project.labels}>
-              { project.desc }
+              labels={project.labels}
+            >
+              {project.desc}
             </ProjectCard>
           </li>
-        ))
-      }
+        ))}
     </ul>
   </section>
 );
 
-export default Projects
+export default Projects;
