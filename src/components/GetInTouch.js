@@ -2,7 +2,8 @@ import React from "react";
 export function ContactForm() {
   return (
     <div className="form-container">
-      <form name="contact" netlify>
+      <form name="contact" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact" />
         <p>
           <label htmlFor="contact_name">Name</label>
           <input
